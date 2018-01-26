@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-
+apply plugin: 'spoon'
 
 android {
     compileSdkVersion 26
@@ -23,6 +23,11 @@ android {
     }
 }
 
+spoon {
+    debug true
+    grantAllPermissions true
+}
+
 dependencies {
     // App's dependencies, including test
     compile 'com.android.support:support-annotations:' + rootProject.supportLibVersion;
@@ -34,4 +39,5 @@ dependencies {
     androidTestCompile 'com.android.support.test:runner:' + rootProject.runnerVersion;
     androidTestCompile 'com.android.support.test:rules:' + rootProject.rulesVersion;
     androidTestCompile 'com.android.support.test.espresso:espresso-core:' + rootProject.espressoVersion;
+    androidTestCompile 'com.squareup.spoon:spoon-client:1.6.4'
 }

@@ -30,6 +30,8 @@ import android.support.test.runner.AndroidJUnit4;
 import android.support.test.runner.AndroidJUnitRunner;
 import android.test.ActivityInstrumentationTestCase2;
 
+import com.squareup.spoon.Spoon;
+
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.action.ViewActions.closeSoftKeyboard;
@@ -69,6 +71,7 @@ public class CalculatorInstrumentationTest {
     @Test
     public void noOperandShowsComputationError() {
         final String expectedResult = mActivityRule.getActivity().getString(R.string.computationError);
+        Spoon.screenshot(mActivityRule.getActivity(), "initial_state");
         onView(withId(R.id.operation_add_btn)).perform(click());
         onView(withId(R.id.operation_result_text_view)).check(matches(withText(expectedResult)));
     }
