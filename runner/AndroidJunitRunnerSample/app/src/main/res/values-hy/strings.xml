@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidJunitRunnerSample</string>
+    <string name="add_operation_text">ավելացնել</string>
+    <string name="sub_operation_text">հանել</string>
+    <string name="div_operation_text">բաժանեք</string>
+    <string name="mul_operation_text">բազմապատկել</string>
+    <string name="computationError">սխալը</string>
+</resources>

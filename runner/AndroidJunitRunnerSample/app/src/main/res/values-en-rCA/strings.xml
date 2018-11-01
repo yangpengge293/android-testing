@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidJunitRunnerSample</string>
+    <string name="add_operation_text">Add, eh?</string>
+    <string name="sub_operation_text">Sub, eh?</string>
+    <string name="div_operation_text">Div, eh?</string>
+    <string name="mul_operation_text">Mul, eh?</string>
+    <string name="computationError">Error, eh?</string>
+</resources>

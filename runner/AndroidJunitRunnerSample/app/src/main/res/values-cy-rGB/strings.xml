@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidJunitRunnerSample</string>
+    <string name="add_operation_text">Ychwanegwch</string>
+    <string name="sub_operation_text">Tynnu</string>
+    <string name="div_operation_text">Rhannwch</string>
+    <string name="mul_operation_text">Lluoswch</string>
+    <string name="computationError">Gwall</string>
+</resources>

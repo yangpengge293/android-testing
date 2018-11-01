@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidJunitRunnerSample</string>
+    <string name="add_operation_text">追加</string>
+    <string name="sub_operation_text">減算</string>
+    <string name="div_operation_text">分割</string>
+    <string name="mul_operation_text">かける</string>
+    <string name="computationError">エラー</string>
+</resources>

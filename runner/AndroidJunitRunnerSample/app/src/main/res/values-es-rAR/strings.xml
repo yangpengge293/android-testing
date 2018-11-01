@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidJunitRunnerSample</string>
+    <string name="add_operation_text">Añadir</string>
+    <string name="sub_operation_text">Sustraer</string>
+    <string name="div_operation_text">Dividir</string>
+    <string name="mul_operation_text">Multiplicar</string>
+    <string name="computationError">Error</string>
+</resources>
