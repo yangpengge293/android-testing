@@ -1,21 +1,25 @@
-Example command-lines to quickly run an Espresso test are all set to go in `run_sauce_runner.sh`
-================================================================================================
-(Excerpted some of `run_sauce_runner.sh` below:)
+### Example command-lines to quickly run an Espresso test are all set to go in `run_sauce_runner.sh`
 
-Below assumes you've checked out android-testing repo in same location as sauce-runner repo,
-it should find sauce-runner-virtual here, or you can change SAUCE_RUNNER_BIN.
+Example from `run_sauce_runner.sh` follows:
 
-Also included are examples for use against testing espresso in build.saucelabs.com and prod.
+*`SAUCE_RUNNER_BIN` path is set assuming you've checked out this repo into the same parent directory as sauce-runner repo.
+It should find sauce-runner-virtual there, or you may change `SAUCE_RUNNER_BIN`.*
+
+Also included are examples for use against testing espresso in `build.saucelabs.com` and prod.
 
 ##### Values for testing on stew33
-```export SAUCE_USERNAME=admin
+
+```
+export SAUCE_USERNAME=admin
 export SAUCE_ACCESS_KEY=0e779f56-385a-41be-a562-6f6908bf5acf
 export TEST_ENDPOINT='stew33.stew.saucelabs.net/rest'
-export SAUCE_RUNNER_BIN='../sauce-runner/sauce-runner-virtual'```
+export SAUCE_RUNNER_BIN='../sauce-runner/sauce-runner-virtual'
 
-##### Run what you just built out of the output folder
-`$SAUCE_RUNNER_BIN -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY -x $TEST_ENDPOINT -f espresso -d 'deviceName=Samsung Galaxy S8 HD GoogleAPI Emulator,platformVersion=7.0,extendedDebugging=true' -v DEBUG -a './runner/AndroidJunitRunnerSample/app/build/outputs/apk/debug/app-debug.apk' -t './runner/AndroidJunitRunnerSample/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk' -i 'class com.example.android.testing.androidjunitrunnersample.OperationHintInstrumentationTest' &`
-
+$SAUCE_RUNNER_BIN -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY -x $TEST_ENDPOINT \
+-f espresso -d 'deviceName=Android GoogleAPI Emulator,platformVersion=7.0' \
+-v DEBUG -a './runner/AndroidJunitRunnerSample/app/build/outputs/apk/debug/app-debug.apk' \
+-t './runner/AndroidJunitRunnerSample/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk'
+```
 
 ### Sauce Runner
 
